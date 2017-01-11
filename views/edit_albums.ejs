@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Edit Albums</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href = "../stylesheets/style.css">
+  </head>
+  <body>
+    <h1>Add an Album:</h1>
+    <form class="form add_album" method = "post" action="/favorite_albums">
+      <div class="form-group">
+        <input type="text" name="title" placeholder="title">
+        <input type="text" name="artist" placeholder="artist">
+        <input type="text" name="img" placeholder="link to image">
+        <input type="submit" value="Submit Album">
+      </div>
+    </form>
+  </body>
+</html>

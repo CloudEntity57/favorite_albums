@@ -1,0 +1,74 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #7C8A87;
+}
+
+a {
+  color: #00B7FF;
+}
+li{
+  list-style: none;
+}
+
+.post{
+  margin: 15px 0px;
+  background-color: #415E7F;
+  border: 3px solid #B8B8B8;
+  text-align: center;
+  padding: 25px 0px;
+  box-shadow: 10px 5px 5px;
+  z-index: 2;
+}
+.post img{
+  max-width:50%;
+  display: inline-block;
+}
+
+.title{
+  font-size: 2em;
+  color: #FFB051;
+  margin-bottom: 5px;
+}
+.artist{
+  font-size: 1.5em;
+  color: black;
+  margin-bottom:10px;
+}
+
+.edit-box{
+  height:15em;
+  width:15em;
+  border:1px solid grey;
+}
+
+.post input{
+  margin-bottom:10px;
+  float:left;
+}
+.edit-box{
+  background-size:cover;
+  background-position: center;
+}
+
+.unusual{
+  background-color: #E8E2C6;
+}
+
+.add_album{
+  width:20%;
+  margin: 15px 0px;
+  background-color: #415E7F;
+  border: 3px solid #B8B8B8;
+  text-align: center;
+  padding: 25px 0px;
+  box-shadow: 10px 5px 5px;
+  z-index: 2;
+}
+.add_album input{
+  display:block;
+  margin: 10px 15px;
+}
+.add_album input[type='submit']{
+  background-color:white;
+}
