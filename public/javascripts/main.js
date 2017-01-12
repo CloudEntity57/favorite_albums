@@ -1,4 +1,4 @@
-$(function(){  
+$(function(){
 
   function loadFavorites(){
 
@@ -44,7 +44,11 @@ $(function(){
         '</li>'
       ].join('');
       $('.album_list').prepend(albumpost);
+
     });
+    var indx = res.length-1;
+    var background = 'url('+res[indx].img+')';
+    $('header').css('background-image',background);
   });
 
 
@@ -65,13 +69,18 @@ function addEventListeners(){
     // console.log('post: ',postId);
     $post.addClass('unusual');
     $post.html([
-      '<input type = "text" class="edit-title" name = "title" value ="',postTitle,'"/>',
-      '<input class="edit-artist" name = "artist" value ="',postArtist,'"/>',
+      '<div class="main-edit-area">',
       '<div class="edit-box" style="background-image:url(',postImg,')">',
-      '<input class="edit-img" name = "img" value ="',postImg,'"/>',
+        '<form class="editing-form">',
+          '<input type = "text" class="edit-title" name = "title" value ="',postTitle,'"/>',
+          '<input class="edit-artist" name = "artist" value ="',postArtist,'"/>',
+          '<textarea class="edit-img" name = "img">',postImg,'</textarea>',
+        '</form>',
       '</div>',
-      '<a href = "#" class = "send-update">Update</a>',
-      '<a href ="#" class = "cancel-update">Cancel</a>'
+        '<a href = "#" class = "submit-button send-update">Update</a>',
+        '<a href ="#" class = "submit-button cancel-update">Cancel</a>',
+      '</div>'
+
     ].join(''));
 
   });

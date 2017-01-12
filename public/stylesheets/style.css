@@ -1,5 +1,4 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #7C8A87;
 }
@@ -7,9 +6,32 @@ body {
 a {
   color: #00B7FF;
 }
+ul {
+    padding-left:0;
+    list-style: none;
+}​
 li{
   list-style: none;
 }
+
+header{
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  width:100%;
+
+}
+
+.album-column{
+  background-color:black;
+  position:absolute;
+  left:25%;
+  top:75px;
+}
+.album-column h1, .album-column h3{
+  color: #FFB051;
+}
+
 
 .post{
   margin: 15px 0px;
@@ -36,24 +58,59 @@ li{
   margin-bottom:10px;
 }
 
+/*Edit Image Styles*/
+
+.main-edit-area{
+  text-align: center;
+  display: block;
+  margin-left:15%;
+}
+
+.editing-form input, .editing-form textarea{
+  width:90%;
+}
+
+.editing-form{
+  margin:45px;
+  text-align: center;
+  margin-bottom: 45px;
+}
 .edit-box{
-  height:15em;
+  height:17em;
   width:15em;
   border:1px solid grey;
-}
-
-.post input{
-  margin-bottom:10px;
-  float:left;
-}
-.edit-box{
+  width:85%;
+  text-align: center;
   background-size:cover;
   background-position: center;
+  padding-bottom: 45px;
 }
 
-.unusual{
-  background-color: #E8E2C6;
+.post input,.post textarea{
+  margin-bottom:10px;
+  border: 1px solid black;
 }
+.post textarea{
+  height:100px;
+}
+
+.submit-button{
+  display:inline-block;
+  background-color:lightgrey;
+  margin-right:45px;
+  margin-top: 15px;
+  height:35px;
+  width:25%;
+  color:black;
+  text-decoration: none;
+  padding-top: 7px;
+}
+
+
+.unusual{
+  background-color: gray;
+}
+
 
 .add_album{
   width:20%;
