@@ -86,6 +86,10 @@ header{
   padding-bottom: 45px;
 }
 
+.edit-post, .delete-post{
+  padding:5px;
+}
+
 .post input,.post textarea{
   margin-bottom:10px;
   border: 1px solid black;
@@ -111,8 +115,12 @@ header{
   background-color: gray;
 }
 
+.add_album_form{
+  text-align: center;
+}
 
 .add_album{
+  display: inline-block;
   width:20%;
   margin: 15px 0px;
   background-color: #415E7F;
@@ -124,6 +132,7 @@ header{
 }
 .add_album input{
   display:block;
+  max-width:80%;
   margin: 10px 15px;
 }
 .add_album input[type='submit']{
