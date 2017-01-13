@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   console.log('loading');
   res.render('index',{
     title:'Favorite Albums',
-    subtitle:'My Favorite Albums of All Time:'
+    subtitle:'Add and Edit Your Favorite Albums of All Time:'
   });
 });
 router.get('/edit_albums', function(req, res, next) {
